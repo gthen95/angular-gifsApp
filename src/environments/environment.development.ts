@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  baseUrl: "http://localhost:4200"
+  baseUrl: "https://gthen95.github.io/angular-gifsApp"
 };

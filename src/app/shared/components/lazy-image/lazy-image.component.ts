@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
-import { environmentProd } from 'src/environments/environment';
 
 @Component({
   selector: 'shared-lazy-image',
@@ -16,8 +15,7 @@ export class LazyImageComponent implements OnInit {
 
   public hasLoaded:boolean = false;
 
-  // public urlRaizAssets:string = `${environment.baseUrl}/assets/loader.svg`;
-  public urlRaizAssets:string = `${environmentProd.baseUrl}/assets/loader.svg`;
+  public urlRaizAssets:string = `${environment.baseUrl}/assets/loader.svg`;
 
   ngOnInit(): void {
     if( !this.url ) throw new Error('Url property is required.');
