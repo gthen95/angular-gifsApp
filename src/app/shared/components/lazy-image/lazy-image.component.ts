@@ -15,7 +15,7 @@ export class LazyImageComponent implements OnInit {
 
   public hasLoaded:boolean = false;
 
-  public urlRaizAssets:string = `${environment.TestUrl}/assets/loader.svg`;
+  public urlRaizAssets:string = `${environment.baseUrl}/assets/loader.svg`;
 
   ngOnInit(): void {
     if( !this.url ) throw new Error('Url property is required.');
